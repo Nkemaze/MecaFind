@@ -1,0 +1,19 @@
+{
+  "name": "mecafind",
+  "version": "1.0.0",
+  "description": "Find approved nearby mechanics in Yaoundé.",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently --names client,server --prefix-colors blue,green \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
+    "client": "npm run dev --prefix client",
+    "server": "npm run dev --prefix server",
+    "build": "npm run build --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}
